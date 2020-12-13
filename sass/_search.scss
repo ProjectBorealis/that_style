@@ -52,8 +52,6 @@ nav > #MSearchBox {
     background-image: none;
     display: table-cell;
     margin: 0;
-    // leave room for #MSearchSelect and a bit more for the border
-    margin-left: 30px;
     width: calc(100% - 34px);
     height: 22px;
     font: 11pt $font-family-sans-serif;
@@ -96,6 +94,6 @@ a.SelectItem {
 #MSearchResultsWindow {
     background-color: $background-color-60;
     margin-top: 16px;
-    margin-left: calc(100% - 1700px);
+    margin-left: calc(100% - 1708px);
     @include box-shadow(0 0 4px rgba(0,0,0,0.35), 0 0 8px rgba(0,0,0,0.2));
 }

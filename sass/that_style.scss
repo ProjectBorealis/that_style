@@ -211,6 +211,7 @@ body {
 	background-color: $background-color;
 	color: $text-light;
     margin: 0;
+    min-height: calc(100vh - 31px);
 }
 
 html {
@@ -365,7 +366,7 @@ th.markdownTableHeadCenter, th.markdownTableHeadNone {
     border: none;
     margin-bottom: -1px;
     background-image: none;
-    background-color: #f6f6f6;
+    background-color: #232323;
     line-height: 1.25;
     font-weight: bold;
     color: $text-light;
@@ -392,6 +393,7 @@ th.markdownTableHeadCenter, th.markdownTableHeadNone {
     position: absolute;
     color: $text-light;
     top: 20%;
+    color: $primary-color;
 }
 
 .permalink a:visited {
@@ -431,7 +433,7 @@ th.markdownTableHeadCenter, th.markdownTableHeadNone {
     transition:         none;
     display: table !important;
     width: 100%;
-    background-color: #f6f6f6;
+    background-color: $background-color-40;
     @include box-shadow(0 0 4px rgba(0,0,0,0.35), 0 0 8px rgba(0,0,0,0.2));
 }
 
@@ -455,7 +457,7 @@ th.markdownTableHeadCenter, th.markdownTableHeadNone {
     color: $text-light;
     font-weight: bold;
     text-shadow: none;
-    background-color: #f6f6f6;
+    background-color: $background-color-40;
     position: relative;
     z-index: 1;
     @include box-shadow(none);
@@ -478,7 +480,7 @@ th.markdownTableHeadCenter, th.markdownTableHeadNone {
     -moz-border-bottom-right-radius: 0px;
     padding: 2px 1% 2px 1%;
     margin: 1%;
-    background-color: $background-color;
+    background-color: $background-color-60;
     background-image: none;
     @include box-shadow(none);
 

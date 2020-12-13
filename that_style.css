@@ -276,6 +276,7 @@ body {
   background-color: #1d1d1d;
   color: #f8f9fa;
   margin: 0;
+  min-height: calc(100vh - 31px);
 }
 
 html {
@@ -510,7 +511,6 @@ nav > #MSearchBox {
   background-image: none;
   display: table-cell;
   margin: 0;
-  margin-left: 30px;
   width: calc(100% - 34px);
   height: 22px;
   font: 11pt system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -556,7 +556,7 @@ a.SelectItem:focus, a.SelectItem:active {
 #MSearchResultsWindow {
   background-color: #2c2c2c;
   margin-top: 16px;
-  margin-left: calc(100% - 1700px);
+  margin-left: calc(100% - 1708px);
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35), 0 0 8px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35), 0 0 8px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35), 0 0 8px rgba(0, 0, 0, 0.2);
@@ -675,7 +675,7 @@ th.markdownTableHeadCenter, th.markdownTableHeadNone {
   border: none;
   margin-bottom: -1px;
   background-image: none;
-  background-color: #f6f6f6;
+  background-color: #232323;
   line-height: 1.25;
   font-weight: bold;
   color: #f8f9fa;
@@ -706,6 +706,7 @@ th.markdownTableHeadCenter, th.markdownTableHeadNone {
   position: absolute;
   color: #f8f9fa;
   top: 20%;
+  color: #f37c1b;
 }
 
 .permalink a:visited {
@@ -745,7 +746,7 @@ th.markdownTableHeadCenter, th.markdownTableHeadNone {
   transition: none;
   display: table !important;
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: #262626;
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35), 0 0 8px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35), 0 0 8px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35), 0 0 8px rgba(0, 0, 0, 0.2);
@@ -775,7 +776,7 @@ th.markdownTableHeadCenter, th.markdownTableHeadNone {
   color: #f8f9fa;
   font-weight: bold;
   text-shadow: none;
-  background-color: #f6f6f6;
+  background-color: #262626;
   position: relative;
   z-index: 1;
   -moz-box-shadow: none;
@@ -800,7 +801,7 @@ th.markdownTableHeadCenter, th.markdownTableHeadNone {
   -moz-border-bottom-right-radius: 0px;
   padding: 2px 1% 2px 1%;
   margin: 1%;
-  background-color: #1d1d1d;
+  background-color: #2c2c2c;
   background-image: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -1269,11 +1270,7 @@ table.doxtable th {
   padding-left: 18px;
   padding-right: 10px;
   color: #f8f9fa;
-  background-color: white;
-  background-image: url("nav_edge_inter.svg");
-  background-repeat: no-repeat;
-  background-position: left -1px;
-  background-size: auto 100%;
+  background-color: #1d1d1d;
 }
 .navpath li:first-child {
   list-style-type: none;
@@ -1281,8 +1278,7 @@ table.doxtable th {
   padding-left: 15px;
   padding-right: 10px;
   color: #f8f9fa;
-  background-color: white;
-  background-image: none;
+  background-color: #121212;
 }
 .navpath li:nth-last-child(2) {
   list-style-type: none;
@@ -1291,10 +1287,6 @@ table.doxtable th {
   padding-right: 15px;
   color: white;
   background-color: #f37c1b;
-  background-image: url("nav_edge_right.svg");
-  background-repeat: no-repeat;
-  background-position: right -1px;
-  background-size: auto 100%;
 }
 .navpath li:nth-last-child(2):not(:first-child) {
   list-style-type: none;
@@ -1339,10 +1331,6 @@ table.doxtable th {
   height: 30px;
   display: inline-block;
   float: left;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("nav_edge_right.svg");
-  background-repeat: no-repeat;
-  background-position: right 0;
-  background-size: auto 100%;
   /* flip the element horizontally */
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
