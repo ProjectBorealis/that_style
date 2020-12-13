@@ -70,6 +70,11 @@ nav > #MSearchBox {
 .SRPage, .SRStatus, #NoMatches, #Searching, #Loading, .SRPage, .SRIndex, #MSearchResults, #MSearchResultsWindow {
     font-family: $font-family-sans-serif;
     color: $text-light;
+    font-size: 1rem !important;
+}
+
+.SRPage .SRStatus {
+    font-size: 1rem !important;
 }
 
 a.SelectItem {
