@@ -15,7 +15,7 @@ div.fragment {
 }
 
 div.line {
-    font-family: monospace, fixed;
+    font-family: $font-family-monospace;
     font-size: 13px;
     min-height: 13px;
     line-height: 1.0;
@@ -41,7 +41,7 @@ div.line {
 span.lineno {
     padding-right: 4px;
     text-align: right;
-    color: black;
+    color: $text-light;
     height: 100px;
     white-space: pre;
     border-right: 3px solid #1d7567;

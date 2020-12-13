@@ -3,7 +3,7 @@
  */
 
 .arrow {
-    color:black;
+    color: $text-light;
     cursor: pointer;
     font-size: 80%;
     display: inline-block;
@@ -18,7 +18,7 @@
     user-select: none;
     
     &:hover {
-        color: black;
+        color: $text-light;
     }
 }
 
@@ -32,19 +32,19 @@
 
 #nav-tree {
     background-image: none;
-    background-color: white;
+    background-color: $background-color-20;
     
     .item {
         margin: 0;
         
         &:hover {
-            background-color: #d2d2d2;
+            background-color: $background-color-dark;
         }
     }
 
     .selected {
         background-image: none;
-        background-color: $primary-color;
+        background-color: $primary-color-dark;
         color: white;
         text-shadow: none;
         
@@ -57,14 +57,14 @@
     }
     
     a {
-        color: black;
+        color: $text-light;
     }
 }
 
 .ui-resizable-e {
     background: #808080 url("splitbar_handle.svg") no-repeat center;
     border-right: solid 1px #c0c0c0;
-    border-left: solid 1px black;
+    border-left: solid 1px $background-color-light;
     
     &:hover {
         background-color: #606060;

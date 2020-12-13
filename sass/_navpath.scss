@@ -8,7 +8,7 @@
         background-image: none;
         height: 30px;
         line-height: 30px;
-        color: black;
+        color: $text-light;
         border: none;
         border-top: 1px solid #808080;
         overflow: hidden;
@@ -22,7 +22,7 @@
         float: left;
         padding-left: 18px;
         padding-right: 10px;
-        color: black;
+        color: $text-light;
         background-color: white;
         background-image: url('nav_edge_inter.svg');
         background-repeat: no-repeat;
@@ -36,7 +36,7 @@
         float: left;
         padding-left: 15px;
         padding-right: 10px;
-        color: black;
+        color: $text-light;
         background-color: white;
         background-image: none;
     }
@@ -75,7 +75,7 @@
         text-decoration: none;
         outline: none;
         color: inherit;
-        font-family: Roboto,sans-serif;
+        font-family: $font-family-sans-serif;
         text-shadow: none;
         text-decoration: none;
         font-weight: normal;
@@ -92,9 +92,9 @@
         float: right;
         padding-left: 0;
         padding-right: 10px;
-        background-color: #d5d5d5;
+        background-color: $background-color;
         background-image: none;
-        color: black;
+        color: $text-light;
         font-size: 8pt;
 
         // show the edge image
@@ -104,7 +104,7 @@
             height: 30px;
             display: inline-block;
             float: left;
-            background-image: url("nav_edge_right.svg");
+            background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("nav_edge_right.svg");
             background-repeat: no-repeat;
             background-position: right 0;
             background-size: auto 100%;

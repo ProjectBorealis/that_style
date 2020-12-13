@@ -7,7 +7,7 @@
 }
 
 #MSearchBox {
-    border: 2px inset black;
+    border: 2px inset $background-color-light;
     display: table;
     width: 350px;
     height: 26px;
@@ -33,7 +33,7 @@
 
 // override for when there is no main menu
 nav > #MSearchBox {
-    border: 2px solid #666666;
+    border: 2px solid $background-color-light;
     margin: 5px 10pt 0 0;
     height: 22px;
 }
@@ -56,21 +56,26 @@ nav > #MSearchBox {
     margin-left: 30px;
     width: calc(100% - 34px);
     height: 22px;
-    font: 11pt sans-serif;
+    font: 11pt $font-family-sans-serif;
 }
 
 #MSearchSelectWindow {
     background-color: $background-color-dark;
     padding: 0;
-    border: solid 1px black;
+    border: solid 1px $background-color-light;
     @include border-radius(0);
     @include box-shadow(0 0 4px rgba(0,0,0,0.35), 0 0 8px rgba(0,0,0,0.2));
+}
+
+.SRPage, .SRStatus, #NoMatches, #Searching, #Loading, .SRPage, .SRIndex, #MSearchResults, #MSearchResultsWindow {
+    font-family: $font-family-sans-serif;
+    color: $text-light;
 }
 
 a.SelectItem {
     color: white;
     padding: 3px 4px;
-    font: 10pt sans-serif;
+    font: 10pt $font-family-sans-serif;
     letter-spacing: 1px;
 
     &:hover {
@@ -84,6 +89,8 @@ a.SelectItem {
 }
 
 #MSearchResultsWindow {
-    background-color: white;
+    background-color: $background-color-60;
+    margin-top: 16px;
+    margin-left: calc(100% - 1700px);
     @include box-shadow(0 0 4px rgba(0,0,0,0.35), 0 0 8px rgba(0,0,0,0.2));
 }
